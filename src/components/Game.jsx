@@ -18,7 +18,7 @@ const Game = () => {
         setPlayer(1 - player);
       }
     }
-    console.log(newBoard);
+    // console.log(newBoard);
   };
 
   const isGameOvered = () => {
@@ -90,11 +90,16 @@ const Game = () => {
         <Button title="Start new Game" handleClear={handleClear} />
 
         <div className={styles.player}>
-          <Button title={`Next Player :- ${1 - player}`} />
+          <Button
+            title={`Next Player :- ${1 - player ? "Prajakta" : "Mitali"} `}
+          />
         </div>
 
         {winner !== undefined && (
-          <div className={styles.winner}>Player {1 - player} won this game</div>
+          // <div className={styles.winner}>Player {1 - player} won this game</div>
+          <div className={styles.winner}>
+            {player ? "Mitali" : "Prajakta"} won this game
+          </div>
         )}
 
         <div className={styles.tableWrapper}>

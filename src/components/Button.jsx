@@ -14,7 +14,7 @@ const Button = ({ title, handleClear, className }) => {
 
 Button.propTypes = {
   title: PropTypes.string.isRequired,
-  handleClear: PropTypes.func.isRequired,
+  handleClear: PropTypes.func,
   className: PropTypes.objectOf(PropTypes.object),
 };
 
