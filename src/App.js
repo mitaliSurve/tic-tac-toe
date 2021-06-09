@@ -1,5 +1,5 @@
-import './App.css';
-import Game from './components/Game';
+import "./App.css";
+import Game from "./components/logictwo/Game";
 
 function App() {
   return (
