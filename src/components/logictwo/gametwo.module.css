@@ -1,0 +1,55 @@
+.board_row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  color: #424242;
+  border: 1px solid #000000;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+}
+
+/* .square:focus {
+  outline: none;
+} */
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+.game_info {
+  font-size: 20px;
+  color: #424242;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.restart_button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.restart {
+  color: #fffde7;
+  border: none;
+  font-size: 20px;
+  color: #424242;
+  border-radius: 4px;
+}
